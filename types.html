@@ -23,9 +23,54 @@
             </ul>
         </nav>
     </header>
-
-
-
+    <h1>Type of XSS</h1>
+    <h2>Reflected (non-persistent)</h2>
+    <ul>
+        <li>The most basic type </li>
+        <br>
+        <li>It is used immediately by server-side scripts to display page results without sanitizing the request.</li>
+        <br>
+        <li>Delivered via email or displayed on a neutral website.</li>
+        <br>
+        <li>The link causes victim's browsers to execute injected scripts.</li>
+    </ul>
+    <h2>Persistent (or stored)</h2>
+    <ul>
+        <li>Most devastating variant of XSS flaw.</li>
+        <br>
+        <li>Data made from attacker is displayed on web page and saved by the server.</li>
+        <br>
+        <li>When a user is browsing casually, their data is saved.</li>
+    </ul>
+    <h2>Server-side Versus DOM-based Vulnerablities</h2>
+    <ul>
+        <li>
+            A server-side input of user is sent to the server then back to user as a web page.
+        </li>
+        <br>
+        <li>In DOM-based, data does not touch server, it is reflected by Javascript code.</li>
+    </ul>
+    <h2>
+        Self-XSS
+    </h2>
+    <ul>
+        <li>
+            Relies on social engineering to trick victims into executing malicious Javascript code into browser
+            <br>.
+        </li>
+        <br>
+        <li>Not truly XSS vulnerability but poseses the same risks.</li>
+    </ul>
+    <h2>Mutated XSS (mXSS)</h2>
+    <ul>
+        <li>
+            Attacker portrays something that is seemingly safe but rewritten by the browser.
+        </li>
+        <br>
+        <li>
+            Hard to detect with websites application login.
+        </li>
+    </ul>
 </body>
 
 </html>
