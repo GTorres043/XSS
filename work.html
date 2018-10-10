@@ -44,33 +44,73 @@
     <body>
 
         <center>
-            <h1>How XSS works</h1>
-            <p><em><strong>The hacker</strong> will go into a web page and the has the vulnerability of cross site
-                    scripting
-                    being implemented
-                    into
-                    the
-                    web site. They then inspect/analyze the HTML used of the web site. After that, then the hacker will
-                    cut
-                    and
-                    paste
-                    the HTML into a text file, save it then open it in a web browser. HTTP is one of the reasons why
-                    cross
-                    site
-                    scripting is so successful- it accepts the request the hacker and builds a web page with the script
-                    embedded by
-                    the
-                    hacker. When the user enters their information, it is then stored on a web server. Once you click
-                    on
-                    the
-                    hyperlink
-                    in which the hacker has created an embedded the cross site scripting on all of your information
-                    directly
-                    goes
-                    to
-                    the hacker.
-            </p></em>
+            <h1>How a Hacker finds a Webpage</h1>
         </center>
+        <li><em><strong>The hacker </strong></em> will first look for websites where the user would input information.
+            Let’s
+            say the hacker finds a bank website and types in something like: “eiurh7db” into the login and a response
+            comes
+            back as login failed, the hacker then knows that this website is vulnerable to cross site scripting.</li>
+        <br>
+        <li>The hacker then inspects/test the page to see if it is possible to insert JavaScript and HTML into the
+            page- which is done by entering some script into the username. This then affects the output and if it is
+            vulnerable, a message will pop up saying “XSS.”</li>
+        <br>
+        <li> The hacker will then create a URL used to steal the users information.</li>
+        <br>
+        <li>They then will inspect the HTML of the web page to adjust the URL. Now if you then enter your information
+            to the login, the hacker will then steal the information along with your password</li>
+        <br>
+        <li>The attacker will go into the document and insert a "form" tag to end/stop the original code.</li>
+        <br>
+        <li>The hacker will then add in additional properties to the document, which is set in JavaScript.This is
+            called onsubmit property. The first the of the URL has a new object, an image. </li>
+        <br>
+        <li>The second part of the URL contains “password,” and “login” boxes. When the user types in their
+            information, it will all be sent to the hacker. </li>
+        <br>
+        <li>After this, the hacker will then put into a URL. This has the arguments contained for the login and the
+            parameter last.</li>
+        <br>
+        <li>Lastly, all the hacker has to do is to get someone to fall victim to their plan. </li>
+
+
+        <center>
+            <h1>How XSS works</h1>
+        </center>
+        <li><em><strong>The hacker</strong></em> will go into a web page and that has the vulnerability of cross
+            site
+            scripting
+            being implemented
+            into
+            the
+            web site.</li>
+        <br>
+        <li>The hacker will inspect/analyze the HTML used of the web site.</li>
+        <br>
+        <li> Next, the hacker will
+            cut
+            and
+            paste
+            the HTML into a text file, save it then open it in a web browser. HTTP is one of the reasons why
+            cross
+            site
+            scripting is so successful- it accepts the request the hacker and builds a web page with the script
+            embedded by
+            the
+            hacker.</li>
+        <br>
+        <li>When the user enters their information, it is then stored on a web server. Once you click
+            on
+            the
+            hyperlink
+            in which the hacker has created an embedded the cross site scripting on all of your information
+            directly
+            goes
+            to
+            the hacker.</li>
+
+
     </body>
 
     </html>
